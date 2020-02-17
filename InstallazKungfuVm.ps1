@@ -44,7 +44,7 @@ Add-AppxPackage -Path ~/Ubuntu.appx
 
 #User must manually configure WSL after reboot, see README.MD file
 #Bring down Desktop Shortcuts
-$zipDownload = "https://github.com/Build5Nines/az-kung-fu-vm/blob/shortcuts.zip?raw=true"
+$zipDownload = "https://github.com/Build5Nines/az-kung-fu-vm/blob/master/shortcuts.zip?raw=true"
 $downloadedFile = "D:\shortcuts.zip"
 $vmFolder = "C:\Users\Public\Desktop"
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
