@@ -89,7 +89,7 @@
       "dependsOn": [
       ],
       "tags": {
-        "displayName": "az-kung-fu-vm-vnet"
+        "Visit": "http://www.Build5Nines.com/az-kung-fu"
       },
       "properties": {
         "addressSpace": {
