@@ -9,6 +9,9 @@ Have you ever spent hours building a machine to use as a admin workstation for A
 
 1. Office 365 Pro Plus
 1. Azure Storage Explorer
+1. Azure Powershell
+1. Azure CLI (Windows)
+1. Azure CLI (bash - manual install)
 1. Git for Windows (bash)
 1. Microsoft Edge
 1. Putty
