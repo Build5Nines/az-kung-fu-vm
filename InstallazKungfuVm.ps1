@@ -53,6 +53,7 @@ Add-Type -assembly "system.io.compression.filesystem"
 [io.compression.zipfile]::ExtractToDirectory($downloadedFile, $vmFolder)
 
 #Install VS Code extensions
+cd "C:\Program Files\Microsoft VS Code\bin"
 code --install-extension ms-vscode.azurecli # Azure CLI Tools
 
 #Reboot
