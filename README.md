@@ -5,6 +5,8 @@ Have you ever spent hours building a machine to use as a admin workstation for A
     <img src="media/Deploy-to-Azure-button.png"/>
 </a>
 
+_Click the "Deploy to Azure" button to deep link into the Azure Portal to deploy this Az Kung Fu VM to become an Azure Administrator Master!_
+
 **Software included on the VM**
 
 1. Office 365 Pro Plus
