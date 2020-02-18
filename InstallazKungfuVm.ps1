@@ -52,5 +52,8 @@ Invoke-WebRequest $zipDownload -OutFile $downloadedFile
 Add-Type -assembly "system.io.compression.filesystem"
 [io.compression.zipfile]::ExtractToDirectory($downloadedFile, $vmFolder)
 
+#Install VS Code extensions
+code --install-extension ms-vscode.azurecli # Azure CLI Tools
+
 #Reboot
 Restart-Computer -Force
