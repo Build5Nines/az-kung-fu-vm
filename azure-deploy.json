@@ -115,7 +115,7 @@
       "dependsOn": [
       ],
       "tags": {
-        "displayName": "azKungFuVm-PUBIP"
+        "Visit": "http://www.Build5Nines.com/az-kung-fu"
       },
       "properties": {
         "publicIPAllocationMethod": "Dynamic",
@@ -135,7 +135,7 @@
         "[resourceId('Microsoft.Network/networkSecurityGroups', variables('azKungFuVmNsgName'))]"
       ],
       "tags": {
-        "displayName": "azKungFuVmNic"
+        "Visit": "http://www.Build5Nines.com/az-kung-fu"
       },
       "properties": {
         "ipConfigurations": [
@@ -166,7 +166,7 @@
         "[resourceId('Microsoft.Network/networkInterfaces', variables('azKungFuVmNicName'))]"
       ],
       "tags": {
-        "displayName": "azKungFuVm"
+        "Visit": "http://www.Build5Nines.com/az-kung-fu"
       },
       "properties": {
         "hardwareProfile": {
@@ -207,7 +207,7 @@
             "[resourceId('Microsoft.Compute/virtualMachines', variables('azKungFuVmName'))]"
           ],
           "tags": {
-            "displayName": "Install azKungFuVm Applications"
+            "Visit": "http://www.Build5Nines.com/az-kung-fu"
           },
           "properties": {
             "publisher": "Microsoft.Compute",
