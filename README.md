@@ -30,6 +30,8 @@ _Click the "Deploy to Azure" button to deep link into the Azure Portal to deploy
 
 ## Configure Windows Subsystem for Linux
 
+Once the Azure CLI Kung Fu VM is deployed, you can easily setup the Ubuntu for Windows using WSL by clicking the shortcut icon right on the Desktop:
+
 1. Double-click Install Ubuntu on Desktop, click Install.
 1. Follow prompts to install providing UNIX username and password.
 1. Run the following command to install the Azure CLI into WSL
