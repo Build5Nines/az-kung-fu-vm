@@ -11,6 +11,7 @@
 # Script Usage
 # - Update the variables and deploy
 # - You will need to supply a username and password.
+# - Please make sure to update the NSG with your IP address - the default is ANY
 ##################################################################################
 
 ## Assign your Azure subscription name or id
