@@ -26,8 +26,10 @@ _Click the "Deploy to Azure" button to deep link into the Azure Portal to deploy
 1. User: Supplied on deploy
 1. Password: Supplied on deploy
 
+![az-kung-fu-vm screnshot with apps shown](media/az-kung-fu-vm-screenshot-all-apps.jpg "az-kung-fu-vm screnshot with apps shown")
 
-**Configure Windows Subsystem for Linux**
+## Configure Windows Subsystem for Linux
+
 1. Double-click Install Ubuntu on Desktop, click Install.
 1. Follow prompts to install providing UNIX username and password.
 1. Run the following command to install the Azure CLI into WSL
