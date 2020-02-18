@@ -1,5 +1,5 @@
 # Az Kung Fu - Adminstrator's VM!
-Have you ever spent hours building a machine to use as a admin workstation for Azure?   What about installing Windows Subsystem for Linux?  Then this one click deployment is for you.  Use this VM to start down the path of az-kung-fu grasshopper!
+Have you ever spent hours building a machine to use as a admin workstation for Azure?   What about installing Windows Subsystem for Linux?  Then this one click deployment is for you.  Use this VM to start down the path of [az-kung-fu](https://github.com/build5nines/az-kung-fu) grasshopper!
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FBuild5Nines%2Faz-kung-fu-vm%2Fmaster%2Fazure-deploy.json" target="_blank">
     <img src="media/Deploy-to-Azure-button.png"/>
@@ -7,7 +7,11 @@ Have you ever spent hours building a machine to use as a admin workstation for A
 
 _Click the "Deploy to Azure" button to deep link into the Azure Portal to deploy this Az Kung Fu VM to become an Azure Administrator Master!_
 
-**Software included on the VM**
+This repo is part of the larger [**Az Kung Fu**](http://github.com/build5nines/az-kung-fu) project from [Dan Patrick](https://twitter.com/deltadan) and [Chris Pietschmann](https://build5nines.com/author/crpietschmann/).
+
+## Software included on the VM
+
+This virtual machine template is meant to easily create a sort of "power tools" style VM for Azure Administrators, as well as Developers and other roles, to use for more easily having a great Azure CLI scripting environment. The template automatically installs lots of really great tools for this purpose.
 
 1. Office 365 Pro Plus
 1. Azure Storage Explorer
@@ -22,7 +26,7 @@ _Click the "Deploy to Azure" button to deep link into the Azure Portal to deploy
 1. Windows Subsystem for Linux (Ubuntu 18.04)
 1. WinRar
 
-**Creds**
+## Credentials
 1. User: Supplied on deploy
 1. Password: Supplied on deploy
 
