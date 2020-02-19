@@ -30,6 +30,9 @@
     }
   },
   "variables": {
+    "GitHubScriptRepo": "deltadan",
+    "GitHubScriptRepoBranch": "master",
+    "GitHubScriptRepoBranchURL": "[concat('https://raw.githubusercontent.com/', variables('GitHubScriptRepo'), '/', variables('GitHubScriptRepoBranch'))]",
     "azKungFuVmVnetName": "az-kung-fu-vm-vnet",
     "azKungFuVmVnetPrefix": "192.168.0.0/24",
     "azKungFuVmVnetSubnet1Name": "az-kung-fu-vm",
@@ -47,7 +50,7 @@
     "azKungFuVm-PUBIPName": "[concat(variables('azKungFuVmName'), '-pip')]",
     "azKungFuVmInstallScriptFolder": ".",
     "azKungFuVmInstallScriptFileName": "InstallazKungFuVm.ps1",
-    "azKungFuVmInstallURL": "https://raw.githubusercontent.com/Build5Nines/az-kung-fu-vm/master/InstallazKungfuVm.ps1"
+    "azKungFuVmInstallURL": "[concat(variables('GitHubScriptRepoBranchURL'), 'CustomScripts/', variables('azKungFuVmInstallScriptFileName'))]"
   },
   "resources": [
     {
