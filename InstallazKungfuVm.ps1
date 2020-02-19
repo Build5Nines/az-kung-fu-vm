@@ -8,7 +8,13 @@
 # Script Usage
 # - custom script extention to configure the az-kung-fu-vm
 # - manually configure the WSL ubuntu distro after provisioning
+# - make sure to set the repo to Build5Nines and the branch to master for PRs
 ##################################################################################
+
+#Set GitHub Repo and Branch
+$gitHubRepo = "Build5Nines"
+$gitHubBranch = "master"
+
 #Install Chocolatey
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
@@ -28,7 +34,7 @@ $Packages = `
 ForEach ($PackageName in $Packages)
 { choco install $PackageName -y }
 
-#Todo - Install Azure PowerShell
+#Install Azure PowerShell
 Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
 Set-ExecutionPolicy Bypass -Scope Process -Force; Install-Module -Name Az -AllowClobber -Scope AllUsers -Force
 
@@ -44,7 +50,7 @@ Add-AppxPackage -Path ~/Ubuntu.appx
 
 #User must manually configure WSL after reboot, see README.MD file
 #Bring down Desktop Shortcuts
-$zipDownload = "https://github.com/Build5Nines/az-kung-fu-vm/blob/master/shortcuts.zip?raw=true"
+$zipDownload = "https://github.com/$gitHubRepo/az-kung-fu-vm/blob/$gitHubBranch/shortcuts.zip?raw=true"
 $downloadedFile = "D:\shortcuts.zip"
 $vmFolder = "C:\Users\Public\Desktop"
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12

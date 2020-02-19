@@ -30,6 +30,9 @@
     }
   },
   "variables": {
+    "GitHubScriptRepo": "Build5Nines",
+    "GitHubScriptRepoBranch": "master",
+    "GitHubScriptRepoBranchURL": "[concat('https://raw.githubusercontent.com/', variables('GitHubScriptRepo'), '/', variables('GitHubScriptRepoBranch'))]",
     "azKungFuVmVnetName": "az-kung-fu-vm-vnet",
     "azKungFuVmVnetPrefix": "192.168.0.0/24",
     "azKungFuVmVnetSubnet1Name": "az-kung-fu-vm",
@@ -39,7 +42,6 @@
     "azKungFuVmImagePublisher": "MicrosoftWindowsDesktop",
     "azKungFuVmImageOffer": "office-365",
     "azKungFuVmWindowsOSVersion": "1903-evd-o365pp",
-    "azKungFuVmOSDiskName": "[concat(variables('azKungFuVmName'), '-OSDISK')]",
     "azKungFuVmVmSize": "Standard_D4s_v3",
     "azKungFuVmID": "[resourceId('Microsoft.Network/virtualNetworks', 'az-kung-fu-vm-vnet')]",
     "azKungFuVmSubnetRef": "[concat(variables('azKungFuVmID'), '/subnets/', variables('azKungFuVmVnetSubnet1Name'))]",
@@ -47,7 +49,7 @@
     "azKungFuVm-PUBIPName": "[concat(variables('azKungFuVmName'), '-pip')]",
     "azKungFuVmInstallScriptFolder": ".",
     "azKungFuVmInstallScriptFileName": "InstallazKungFuVm.ps1",
-    "azKungFuVmInstallURL": "https://raw.githubusercontent.com/Build5Nines/az-kung-fu-vm/master/InstallazKungfuVm.ps1"
+    "azKungFuVmInstallURL": "[concat(variables('GitHubScriptRepoBranchURL'), 'CustomScripts/', variables('azKungFuVmInstallScriptFileName'))]"
   },
   "resources": [
     {
@@ -89,7 +91,7 @@
       "dependsOn": [
       ],
       "tags": {
-        "Visit": "http://www.Build5Nines.com/az-kung-fu"
+        "Visit": "http://azkungfu.io"
       },
       "properties": {
         "addressSpace": {
@@ -115,7 +117,7 @@
       "dependsOn": [
       ],
       "tags": {
-        "Visit": "http://www.Build5Nines.com/az-kung-fu"
+        "Visit": "http://azkungfu.io"
       },
       "properties": {
         "publicIPAllocationMethod": "Dynamic",
@@ -135,7 +137,7 @@
         "[resourceId('Microsoft.Network/networkSecurityGroups', variables('azKungFuVmNsgName'))]"
       ],
       "tags": {
-        "Visit": "http://www.Build5Nines.com/az-kung-fu"
+        "Visit": "http://azkungfu.io"
       },
       "properties": {
         "ipConfigurations": [
@@ -166,7 +168,7 @@
         "[resourceId('Microsoft.Network/networkInterfaces', variables('azKungFuVmNicName'))]"
       ],
       "tags": {
-        "Visit": "http://www.Build5Nines.com/az-kung-fu"
+        "Visit": "http://azkungfu.io"
       },
       "properties": {
         "hardwareProfile": {
@@ -207,7 +209,7 @@
             "[resourceId('Microsoft.Compute/virtualMachines', variables('azKungFuVmName'))]"
           ],
           "tags": {
-            "Visit": "http://www.Build5Nines.com/az-kung-fu"
+            "Visit": "http://azkungfu.io"
           },
           "properties": {
             "publisher": "Microsoft.Compute",
