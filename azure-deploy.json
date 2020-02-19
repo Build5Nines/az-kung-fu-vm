@@ -49,7 +49,7 @@
     "azKungFuVm-PUBIPName": "[concat(variables('azKungFuVmName'), '-pip')]",
     "azKungFuVmInstallScriptFolder": ".",
     "azKungFuVmInstallScriptFileName": "InstallazKungFuVm.ps1",
-    "azKungFuVmInstallURL": "[concat(variables('GitHubScriptRepoBranchURL'), 'CustomScripts/', variables('azKungFuVmInstallScriptFileName'))]"
+    "azKungFuVmInstallURL": "[concat(variables('GitHubScriptRepoBranchURL'), '/', variables('azKungFuVmInstallScriptFileName'))]"
   },
   "resources": [
     {
