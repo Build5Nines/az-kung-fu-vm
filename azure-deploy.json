@@ -92,7 +92,7 @@
       "dependsOn": [
       ],
       "tags": {
-        "Visit": "http://www.Build5Nines.com/az-kung-fu"
+        "Visit": "http://azkungfu.io"
       },
       "properties": {
         "addressSpace": {
@@ -118,7 +118,7 @@
       "dependsOn": [
       ],
       "tags": {
-        "Visit": "http://www.Build5Nines.com/az-kung-fu"
+        "Visit": "http://azkungfu.io"
       },
       "properties": {
         "publicIPAllocationMethod": "Dynamic",
@@ -138,7 +138,7 @@
         "[resourceId('Microsoft.Network/networkSecurityGroups', variables('azKungFuVmNsgName'))]"
       ],
       "tags": {
-        "Visit": "http://www.Build5Nines.com/az-kung-fu"
+        "Visit": "http://azkungfu.io"
       },
       "properties": {
         "ipConfigurations": [
@@ -169,7 +169,7 @@
         "[resourceId('Microsoft.Network/networkInterfaces', variables('azKungFuVmNicName'))]"
       ],
       "tags": {
-        "Visit": "http://www.Build5Nines.com/az-kung-fu"
+        "Visit": "http://azkungfu.io"
       },
       "properties": {
         "hardwareProfile": {
@@ -210,7 +210,7 @@
             "[resourceId('Microsoft.Compute/virtualMachines', variables('azKungFuVmName'))]"
           ],
           "tags": {
-            "Visit": "http://www.Build5Nines.com/az-kung-fu"
+            "Visit": "http://azkungfu.io"
           },
           "properties": {
             "publisher": "Microsoft.Compute",
