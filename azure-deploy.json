@@ -30,7 +30,7 @@
     }
   },
   "variables": {
-    "GitHubScriptRepo": "Build5Nines",
+    "GitHubScriptRepo": "Build5Nines/az-kung-fu-vm",
     "GitHubScriptRepoBranch": "master",
     "GitHubScriptRepoBranchURL": "[concat('https://raw.githubusercontent.com/', variables('GitHubScriptRepo'), '/', variables('GitHubScriptRepoBranch'))]",
     "azKungFuVmVnetName": "az-kung-fu-vm-vnet",
