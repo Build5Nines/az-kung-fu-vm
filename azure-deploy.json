@@ -30,7 +30,7 @@
     }
   },
   "variables": {
-    "GitHubScriptRepo": "deltadan",
+    "GitHubScriptRepo": "Build5Nines",
     "GitHubScriptRepoBranch": "master",
     "GitHubScriptRepoBranchURL": "[concat('https://raw.githubusercontent.com/', variables('GitHubScriptRepo'), '/', variables('GitHubScriptRepoBranch'))]",
     "azKungFuVmVnetName": "az-kung-fu-vm-vnet",
@@ -42,7 +42,6 @@
     "azKungFuVmImagePublisher": "MicrosoftWindowsDesktop",
     "azKungFuVmImageOffer": "office-365",
     "azKungFuVmWindowsOSVersion": "1903-evd-o365pp",
-    "azKungFuVmOSDiskName": "[concat(variables('azKungFuVmName'), '-OSDISK')]",
     "azKungFuVmVmSize": "Standard_D4s_v3",
     "azKungFuVmID": "[resourceId('Microsoft.Network/virtualNetworks', 'az-kung-fu-vm-vnet')]",
     "azKungFuVmSubnetRef": "[concat(variables('azKungFuVmID'), '/subnets/', variables('azKungFuVmVnetSubnet1Name'))]",
