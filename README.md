@@ -1,4 +1,7 @@
 # Az Kung Fu - Adminstrator's VM!
+
+![Az Kung Fu Administrator's VM](https://i2.wp.com/build5nines.com/wp-content/uploads/2020/02/Azure-CLI-KungFu-VM-Featured_Image.jpg?resize=270%2C181&ssl=1 "Az Kung Fu Administrator's VM")
+
 Have you ever spent hours building a machine to use as a admin workstation for Azure?   What about installing Windows Subsystem for Linux?  Then this one click deployment is for you.  Use this VM to start down the path of [az-kung-fu](https://github.com/build5nines/az-kung-fu) grasshopper!
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FBuild5Nines%2Faz-kung-fu-vm%2Fmaster%2Fazure-deploy.json" target="_blank">
