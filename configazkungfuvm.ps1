@@ -13,7 +13,7 @@
 
 #Set GitHub Repo and Branch
 $gitHubRepo = "Build5Nines"
-$gitHubBranch = "master"
+$gitHubBranch = "dev"
 
 #Install Chocolatey
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
@@ -21,14 +21,15 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object
 
 #Assign Chocolatey Packages to Install
 $Packages = `
-    'winrar', `
+    '7zip', `
     'git', `
+    'gh', `
     'putty.install', `
     'sysinternals', `
-    'github-desktop', `
     'microsoft-edge', `
     'visualstudiocode', `
-    'microsoftazurestorageexplorer'
+    'microsoftazurestorageexplorer', `
+    'terraform'
 
 #Install Chocolatey Packages
 ForEach ($PackageName in $Packages)

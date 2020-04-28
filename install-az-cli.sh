@@ -12,7 +12,7 @@
 ##################################################################################
 # Get packages needed for the install process
 apt-get update
-apt-get install ca-certificates curl apt-transport-https lsb-release gnupg
+apt-get install ca-certificates curl apt-transport-https lsb-release gnupg unzip -y
 
 # Download and install the Microsoft signing key
 curl -sL https://packages.microsoft.com/keys/microsoft.asc | 
@@ -27,3 +27,8 @@ echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ $AZ_REPO 
 # Update repository information and install the azure-cli package
 apt-get update
 apt-get install azure-cli -y
+
+# Download and install terraform
+wget https://releases.hashicorp.com/terraform/0.12.24/terraform_0.12.24_linux_amd64.zip
+unzip terraform_0.12.24_linux_amd64.zip
+sudo install terraform /usr/local/bin/
