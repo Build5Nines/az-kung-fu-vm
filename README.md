@@ -32,6 +32,7 @@ This virtual machine template is meant to easily create a sort of "power tools" 
 1. Terraform CLI
 1. Windows Subsystem for Linux (Ubuntu 18.04)
 1. WinRar
+1. 7-Zip
 
 ## Credentials
 1. User: Supplied on deploy

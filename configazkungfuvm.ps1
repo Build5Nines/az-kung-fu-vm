@@ -31,7 +31,8 @@ $Packages = `
     'microsoftazurestorageexplorer',
     'kubernetes-cli',
     'kubernetes-helm',
-    'terraform'
+    'terraform',
+    '7zip.install'
 
 #Install Chocolatey Packages
 ForEach ($PackageName in $Packages)
