@@ -2,6 +2,13 @@
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
+    "vmSize": {
+      "type": "string",
+      "defaultValue": "Standard_D4s_v3",
+      "metadata": {
+        "description": "The VM instance size / pricing tier"
+      }
+    },
     "adminUsername": {
       "type": "string",
       "metadata": {
@@ -42,7 +49,7 @@
     "azKungFuVmImagePublisher": "MicrosoftWindowsDesktop",
     "azKungFuVmImageOffer": "office-365",
     "azKungFuVmWindowsOSVersion": "1903-evd-o365pp",
-    "azKungFuVmVmSize": "Standard_D4s_v3",
+    "azKungFuVmVmSize": "[parameters('vmSize')]",
     "azKungFuVmID": "[resourceId('Microsoft.Network/virtualNetworks', 'az-kung-fu-vm-vnet')]",
     "azKungFuVmSubnetRef": "[concat(variables('azKungFuVmID'), '/subnets/', variables('azKungFuVmVnetSubnet1Name'))]",
     "azKungFuVmNicName": "[concat(variables('azKungFuVmName'), '-nic')]",
