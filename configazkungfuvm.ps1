@@ -15,6 +15,9 @@
 $gitHubRepo = "Build5Nines"
 $gitHubBranch = "master"
 
+#Enable WSL
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux -NoRestart
+
 #Install Chocolatey
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
@@ -33,7 +36,8 @@ $Packages = `
     'kubernetes-helm', `
     'terraform', `
     '7zip.install', `
-    'microsoft-windows-terminal'
+    'microsoft-windows-terminal', `
+    'wsl-ubuntu-1804'
 
 #Install Chocolatey Packages
 ForEach ($PackageName in $Packages)
@@ -45,13 +49,6 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; Install-Module -Name Az -Allow
 
 #Install Azure CLI for Windows
 Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-WebRequest -Uri https://aka.ms/installazurecliwindows -OutFile .\AzureCLI.msi; Start-Process msiexec.exe -Wait -ArgumentList '/I AzureCLI.msi /quiet'
-
-#Enable WSL
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux -NoRestart
-
-#Download and Install Ubuntu
-Invoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-1804 -OutFile ~/Ubuntu.appx -UseBasicParsing
-Add-AppxPackage -Path ~/Ubuntu.appx
 
 #User must manually configure WSL after reboot, see README.MD file
 #Bring down Desktop Shortcuts
