@@ -27,6 +27,9 @@ This virtual machine template is meant to easily create a sort of "power tools" 
 1. Putty
 1. SysInternals
 1. Visual Studio Code
+1. Kubernetes CLI
+1. Kubernetes Helm
+1. Terraform CLI
 1. Windows Subsystem for Linux (Ubuntu 18.04)
 1. WinRar
 
