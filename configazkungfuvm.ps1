@@ -28,7 +28,10 @@ $Packages = `
     'github-desktop', `
     'microsoft-edge', `
     'visualstudiocode', `
-    'microsoftazurestorageexplorer'
+    'microsoftazurestorageexplorer',
+    'kubernetes-cli',
+    'kubernetes-helm',
+    'terraform'
 
 #Install Chocolatey Packages
 ForEach ($PackageName in $Packages)
