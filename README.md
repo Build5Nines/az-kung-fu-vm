@@ -35,8 +35,8 @@ This virtual machine template is meant to easily create a sort of "power tools" 
 1. 7-Zip
 
 ## Credentials
-1. User: Supplied on deploy
-1. Password: Supplied on deploy
+1. User: `Supplied on deploy`
+1. Password: `Supplied on deploy`
 
 ![az-kung-fu-vm screnshot with apps shown](media/az-kung-fu-vm-screenshot-all-apps.jpg "az-kung-fu-vm screnshot with apps shown")
 
