@@ -5,6 +5,7 @@ This is a list of changes / updates that have been made to the az-kung-fu-vm ove
 **May 13, 2020**
 - updated VM size to be a parameter so it can be customized when running the ARM template deployment
 - Added some additional tools installed on the VM
+  - Windows Terminal
   - Kubernetes CLI
   - Kubernetes Helm
   - Terraform
