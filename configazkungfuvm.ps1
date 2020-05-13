@@ -32,7 +32,8 @@ $Packages = `
     'kubernetes-cli',
     'kubernetes-helm',
     'terraform',
-    '7zip.install'
+    '7zip.install',
+    'choco install microsoft-windows-terminal'
 
 #Install Chocolatey Packages
 ForEach ($PackageName in $Packages)

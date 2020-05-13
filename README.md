@@ -22,6 +22,7 @@ This virtual machine template is meant to easily create a sort of "power tools" 
 1. Azure Powershell
 1. Azure CLI (Windows)
 1. Azure CLI (bash - manual install)
+1. Windows Terminal
 1. Git for Windows (bash)
 1. Microsoft Edge
 1. Putty
