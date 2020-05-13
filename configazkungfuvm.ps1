@@ -28,11 +28,11 @@ $Packages = `
     'github-desktop', `
     'microsoft-edge', `
     'visualstudiocode', `
-    'microsoftazurestorageexplorer',
-    'kubernetes-cli',
-    'kubernetes-helm',
-    'terraform',
-    '7zip.install',
+    'microsoftazurestorageexplorer', `
+    'kubernetes-cli', `
+    'kubernetes-helm', `
+    'terraform', `
+    '7zip.install', `
     'microsoft-windows-terminal'
 
 #Install Chocolatey Packages
