@@ -21,11 +21,8 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object
 
 #Assign Chocolatey Packages to Install
 $Packages = `
-    'winrar', `
     'git', `
     'putty.install', `
-    'sysinternals', `
-    'github-desktop', `
     'microsoft-edge', `
     'visualstudiocode', `
     'microsoftazurestorageexplorer', `
@@ -33,6 +30,8 @@ $Packages = `
     'kubernetes-helm', `
     'terraform', `
     '7zip.install', `
+    'make', `
+    'lens', `
     'microsoft-windows-terminal'
 
 #Install Chocolatey Packages
