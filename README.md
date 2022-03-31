@@ -16,8 +16,9 @@ This repo is part of the larger [**Az Kung Fu**](http://github.com/build5nines/a
 
 This virtual machine template is meant to easily create a sort of "power tools" style VM for Azure Administrators, as well as Developers and other roles, to use for more easily having a great Azure CLI scripting environment. The template automatically installs lots of really great tools for this purpose.
 
-1. Chocolatey Package Manager
-1. Office 365 Pro Plus
+1. Windows 10 Desktop
+1. Windows Subsystem for Linux (Ubuntu 18.04)
+1. Chocolately
 1. Azure Storage Explorer
 1. Azure Powershell
 1. Azure CLI (Windows)
@@ -26,13 +27,12 @@ This virtual machine template is meant to easily create a sort of "power tools" 
 1. Git for Windows (bash)
 1. Microsoft Edge
 1. Putty
-1. SysInternals
 1. Visual Studio Code
 1. Kubernetes CLI
 1. Kubernetes Helm
 1. Terraform CLI
-1. Windows Subsystem for Linux (Ubuntu 18.04)
-1. WinRar
+1. make
+1. Lens
 1. 7-Zip
 
 ## Credentials
